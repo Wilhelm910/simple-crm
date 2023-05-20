@@ -1,0 +1,31 @@
+.user-detail-header {
+    height: 250px;
+    background-color: rgb(121, 33, 137);
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.img-container {
+    width: 80px;
+ 
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.edit-user-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+}

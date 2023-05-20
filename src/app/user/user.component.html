@@ -2,15 +2,15 @@
     <mat-card-content>
         <table class="user-table">
             <tr>
-            <th>Name</th>
-            <th>E-Mail</th>
-            <th>City</th>
-        </tr>
-        <tr>
-            <td>132</td>
-            <td>132</td>
-            <td>132</td>
-        </tr>
+                <th>Name</th>
+                <th>E-Mail</th>
+                <th>City</th>
+            </tr>
+            <tr *ngFor="let user of allUsers; let i = index" routerLink="{{ '/user/' + user.ID }}">
+                <td>{{ user.lastName }}, {{ user.firstName }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.city }}</td>
+            </tr>
         </table>
     </mat-card-content>
 </mat-card>

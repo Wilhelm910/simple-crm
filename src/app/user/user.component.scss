@@ -7,11 +7,33 @@
 
 .user-table {
     width: 100%;
+    border-collapse: collapse;
+
+    tr {
+        height: 48px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.03);
+        }
+
+        &:first-child {
+            cursor: unset;
+            &:hover {
+                background-color: unset;
+            }
+        }
+
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
 
     th {
-        color: rgba(0,0,0,.5);
+        color: rgba(0, 0, 0, .5);
         font-size: 14px;
         font-weight: 500;
         text-align: start;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.3);
     }
 }
